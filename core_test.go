@@ -18,7 +18,7 @@ import (
 
 type logEntry struct {
 	Severity       string          `json:"severity"`
-	EventTime      logEntryTime    `json:"eventTime"`
+	EventTime      logEntryTime    `json:"timestamp"`
 	ServiceContext *ServiceContext `json:"serviceContext"`
 	Message        string          `json:"message"`
 	Context        *Context        `json:"context"`
@@ -68,7 +68,7 @@ func TestCore(t *testing.T) {
 
 		require.Nil(t, json.Unmarshal(writer.Bytes(), &actual))
 		assert.Equal(t, "DEBUG", actual.Severity)
-		assert.Equal(t, "test", actual.Message)
+		assert.Equal(t, "test foo=bar", actual.Message)
 		assert.WithinDuration(t, time.Now(), time.Time(actual.EventTime), time.Second)
 		assert.Equal(t, &ServiceContext{
 			Service: "foo",
