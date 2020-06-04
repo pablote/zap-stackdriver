@@ -1,13 +1,13 @@
 # zap-stackdriver
 
-[![GoDoc](https://godoc.org/github.com/tommy351/zap-stackdriver?status.svg)](https://godoc.org/github.com/tommy351/zap-stackdriver) [![Build Status](https://travis-ci.org/tommy351/zap-stackdriver.svg)](https://travis-ci.org/tommy351/zap-stackdriver) [![Coverage Status](https://coveralls.io/repos/github/tommy351/zap-stackdriver/badge.svg)](https://coveralls.io/github/tommy351/zap-stackdriver)
+[![GoDoc](https://godoc.org/github.com/pablote/zap-stackdriver?status.svg)](https://godoc.org/github.com/pablote/zap-stackdriver) [![Build Status](https://travis-ci.org/tommy351/zap-stackdriver.svg)](https://travis-ci.org/tommy351/zap-stackdriver) [![Coverage Status](https://coveralls.io/repos/github/tommy351/zap-stackdriver/badge.svg)](https://coveralls.io/github/tommy351/zap-stackdriver)
 
 Prints [Stackdriver format](https://cloud.google.com/error-reporting/docs/formatting-error-messages) logs with [zap](https://github.com/uber-go/zap).
 
 ## Installation
 
 ``` sh
-go get -u github.com/tommy351/zap-stackdriver
+go get -u github.com/pablote/zap-stackdriver
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ go get -u github.com/tommy351/zap-stackdriver
 package main
 
 import (
-	"github.com/tommy351/zap-stackdriver"
+	"github.com/pablote/zap-stackdriver"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

@@ -125,7 +125,7 @@ func TestCore(t *testing.T) {
 		loc := actual.Context.ReportLocation
 		assert.Equal(t, file, loc.FilePath)
 		assert.Equal(t, line+1, loc.LineNumber)
-		assert.True(t, strings.HasPrefix(loc.FunctionName, "github.com/tommy351/zap-stackdriver.TestCore"))
+		assert.True(t, strings.HasPrefix(loc.FunctionName, "github.com/pablote/zap-stackdriver.TestCore"))
 	})
 }
 

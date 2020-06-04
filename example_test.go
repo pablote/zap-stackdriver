@@ -1,7 +1,7 @@
 package stackdriver_test
 
 import (
-	"github.com/tommy351/zap-stackdriver"
+	"github.com/pablote/zap-stackdriver"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
